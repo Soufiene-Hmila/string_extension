@@ -17,7 +17,7 @@ extension StringExtension on String {
     } else if (seconds >= 60 && seconds < 3600) {
       return '${DateTime.now().difference(dateTimeFromString).inMinutes.abs()} minutes';
     } else if (hours >= 1 && hours < 2) {
-      return '${DateTime.now().difference(dateTimeFromString).inHours} ${locale.contains('fr')? 'hour' : 'heure'}';
+      return '${DateTime.now().difference(dateTimeFromString).inHours.abs()} ${locale.contains('fr')? 'hour' : 'heure'}';
     } else if (hours >= 2 && hours < 12) {
       return DateFormat('HH:mm','fr').format(dateTimeFromString);
     } else {

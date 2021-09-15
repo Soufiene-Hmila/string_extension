@@ -29,7 +29,9 @@ TODO: Include short and useful examples for package users. Add longer examples
 to `/example` folder. 
 
 ```dart
-const like = 'sample';
+main() {
+  print('15 September, 2021 17:08'.title.formatStringDateTime(pattern: 'dd MMMM, yyyy HH:mm',format: 'dd/MM/yyyy'));
+}
 ```
 
 ## Additional information
